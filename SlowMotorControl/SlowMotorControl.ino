@@ -19,13 +19,13 @@ Cycle duration sets the total time from the "on" of one pulse, to the "on" of th
 #define sp1in "A2"
 #define sp2in "A3"
 
-#define PWM 255
+#define PWM 150
 
 int sp1Delay, sp2Delay;
 int sp1SecPerRev, sp2SecPerRev;
-float pulseDuration = 200;   //milliseconds
+float pulseDuration = 100;   //milliseconds
 float cycleDuration1 = 3000;
-float cycleDuration2 = 12000;  //milliseconds
+float cycleDuration2 = 3000;  //milliseconds
 float delayDuration1, delayDuration2;
 
 long int offTime1, onTime1, tnow;
@@ -49,8 +49,8 @@ void setup() {
   onTime1 = millis();
   offTime2 = millis();
   onTime2 = millis();
-  digitalWrite(m1Dir, HIGH);
-  digitalWrite(m2Dir, HIGH);
+  //digitalWrite(m1Dir, HIGH);
+  //digitalWrite(m2Dir, HIGH);
   //digitalWrite(m2Dir, HIGH);
   delay(3000);
  // digitalWrite(m1Dir, LOW);
